@@ -133,14 +133,16 @@ def main(page: ft.Page):
                 divider,
                 ft.Row([turn_text], alignment=ft.MainAxisAlignment.CENTER),
                 ft.Row([reset], alignment=ft.MainAxisAlignment.CENTER),
-            ]
+            ],
+            alignment = ft.MainAxisAlignment.CENTER
         )
     )
 
     body = ft.Container(
         content = ft.Column(controls=[app_page]),
         width = width,
-        height = height
+        height = height,
+        alignment = ft.MainAxisAlignment.CENTER
     )
 
     page.add(body)
