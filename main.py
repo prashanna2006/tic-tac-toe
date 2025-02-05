@@ -134,7 +134,6 @@ def main(page: ft.Page):
                 ft.Row([turn_text], alignment=ft.MainAxisAlignment.CENTER),
                 ft.Row([reset], alignment=ft.MainAxisAlignment.CENTER),
             ],
-            alignment = ft.MainAxisAlignment.CENTER
         )
     )
 
@@ -142,7 +141,6 @@ def main(page: ft.Page):
         content = ft.Column(controls=[app_page]),
         width = width,
         height = height,
-        alignment = ft.MainAxisAlignment.CENTER
     )
 
     page.add(body)
